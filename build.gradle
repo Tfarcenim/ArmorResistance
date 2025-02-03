@@ -10,7 +10,7 @@ subprojects {
 
     java.toolchain.languageVersion = JavaLanguageVersion.of(17)
     java.withSourcesJar()
-    java.withJavadocJar()
+ //   java.withJavadocJar()
 
     jar {
         from(rootProject.file("LICENSE")) {
@@ -47,6 +47,10 @@ subprojects {
         maven {
             name = 'BlameJared Maven (JEI / CraftTweaker / Bookshelf)'
             url = 'https://maven.blamejared.com'
+        }
+        maven {
+            name = "Fuzs Mod Resources"
+            url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/"
         }
     }
 
